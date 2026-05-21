@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portal de servicios para estudiantes de la Benemérita Universidad Autónoma de Puebla - FCC. Guías en video y documentos informativos para tus trámites académicos.">
     <link rel="stylesheet" href="css/estilos.css">
     
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@900&display=swap" rel="stylesheet">
@@ -11,16 +12,31 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 
-    <title>Inicio</title>
+    <title>Servicios FCC - BUAP</title>
     <link rel="icon" type="image/png" href="imagenes/BUAP-favi-icon.png">
 
 </head>
 <body>
 
-    <header>
+    <header role="banner">
         <div class="logo">
-            <img src="imagenes/logo_buap_h.png" alt="Logo" class="logo-image">
+            <img src="imagenes/logo_buap_h.png" alt="Logo" class="logo-image" href="https://buap.mx/">
         </div>
+
+        <nav class="navbar">
+          <a class="nav-btn active"> 
+            Inicio
+          </a>
+
+          <a href="https://www.cs.buap.mx/~secreacademica/Servicios-Escolares.html" class="nav-btn">
+             Servicios Escolares
+          </a>
+
+          <a href="https://www.cs.buap.mx/~secreacademica/" class="nav-btn"> 
+             Secretaría Académica FCC
+          </a>
+
+        </nav>
 
         <div class="redes-sociales">
 
@@ -30,122 +46,170 @@
 
         </div>
     </header>
-     <br>
+
+    <!-- barra -->
+    <section class="hero">
+      <h1>Ingeniería en Ciencias de la Computación</h1>
+      <p>Consulta guías, videos e información académica</p>
+    </section>
+
+    <!-- carrusel-->
+
+    <section class="carousel">
+    <div class="slides">
+
+      <div class="slide active">
+        <img src="imagenes/escuela_buap.jpg">
+        <div class="caption">
+          <h2>Inscripciones abiertas</h2>
+          <p>Consulta fechas importantes en servicios escolares</p>
+        </div>
+      </div>
+
+      <div class="slide">
+        <img src="imagenes/calendario.png">
+        <div class="caption">
+          <h2>Periodo de bajas</h2>
+          <p>Realiza tu trámite antes de la fecha límite</p>
+        </div>
+      </div>
+
+      <div class="slide">
+        <img src="imagenes/arco.jpg">
+        <div class="caption">
+          <h2>Ubica a tu tutor</h2>
+          <p>Consulta el sistema académico</p>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="indicators"></div>
+
+    <!-- Botones -->
+    <button class="prev">&#10094;</button>
+    <button class="next">&#10095;</button>
+  </section>
+
+  <! -- mini carrusel -->
+  <section class="mini-carousel">
+    <div class="mini-track">
+
+      <div class="mini-item">Aviso 1</div>
+      <div class="mini-item">Convocatoria becas</div>
+      <div class="mini-item">Calendario escolar</div>
+      <div class="mini-item">Servicio social</div>
+      <div class="mini-item">Prácticas profesionales</div>
+
+    </div>
+  </section>
+
+  <!-- Videos-->
+    <section class="contenedor">
+
+      <div class="card" style="background-image:url('imagenes/inscripcion.jpg')">
+        <div class="overlay">
+          <a href="videos/Inscripción_de_materias.mp4" target="_blank">
+            <button>Ver video</button>
+          </a>
+        </div>
+        <h3>Inscripción de materias</h3>
+      </div>
+
+      <div class="card" style="background-image:url('imagenes/buscar_tutor.jpg')">
+        <div class="overlay">
+          <a href="videos/Ubicar_tutor.mp4" target="_blank">
+            <button>Ver video</button>
+          </a>
+        </div>
+        <h3>Ubicar tutor</h3>
+      </div>
+
+      <div class="card" style="background-image:url('imagenes/escuela_buap.jpg')">
+        <div class="overlay">
+          <a href="videos/Plan_estudios.mp4" target="_blank">
+            <button>Ver video</button>
+          </a>
+        </div>
+        <h3>Plan de estudios</h3>
+      </div>
+
+      <div class="card" style="background-image:url('imagenes/inscripcion.jpg')">
+        <div class="overlay">
+          <a href="videos/baja_materias.mp4" target="_blank">
+            <button>Ver video</button>
+          </a>
+        </div>
+        <h3>Baja de materias</h3>
+      </div>
+
+      <div class="card" style="background-image:url('imagenes/inscripcion.jpg')">
+        <div class="overlay">
+          <a href="videos/horario_curso.mp4" target="_blank">
+            <button>Ver video</button>
+          </a>
+        </div>
+        <h3>Horario de cursos</h3>
+      </div>
+
+      <div class="card" style="background-image:url('imagenes/inscripcion.jpg')">
+        <div class="overlay">
+          <a href="videos/actualizar_contraseña.mp4" target="_blank">
+            <button>Ver video</button>
+          </a>
+        </div>
+        <h3>Actualizar contraseña</h3>
+      </div>
+
+    </section>
+
   
 
-  <div class="row">
-    <div class="card card1">
-      <div class="overlay">
-        <a href="videos/Inscripción_de_materias.mp4" target="_blank">
-          <button>Ver video</button>
-        </a>
+   <!-- Infografias y presentacion -->
+    <section class="info">
+
+    <h2>Presentaciones</h2>
+      <div class="presentaciones">
+
+      <div class="present-card">
+        <i class="fas fa-user-graduate"></i>
+        <h3>Proceso de inscripción</h3>
+        <a href="archivos_pdf/inscripcion.pdf" target="_blank">Ver documento</a>
       </div>
-      <h3>Inscripción de materias</h3>
-    </div>
 
-    <div class="card card2">
-      <div class="overlay">
-        <a href="videos/Ubicar_tutor.mp4" target="_blank">
-          <button>Ver video</button>
-        </a>
+      <div class="present-card">
+        <i class="fas fa-book"></i>
+        <h3>Plan de estudios</h3>
+        <a href="archivos_pdf/plan_estudios.pdf" target="_blank">Ver documento</a>
       </div>
-      <h3>Ubicar al tutor</h3>
-    </div>
 
-    <div class="card card3">
-      <div class="overlay">
-        <a href="videos/Plan_estudios.mp4" target="_blank">
-          <button>Ver video</button>
-        </a>
+      <div class="present-card">
+        <i class="fas fa-hand-holding-heart"></i>
+        <h3>Apoyos disponibles</h3>
+        <a href="archivos_pdf/apoyos.pdf" target="_blank">Ver documento</a>
       </div>
-      <h3>Plan de estudio</h3>
-    </div>
 
-    <div class="card card4">
-      <div class="overlay">
-        <a href="videos/baja_materias.mp4" target="_blank">
-          <button>Ver video</button>
-        </a>
+    </div>
+  
+     <h2>infografías</h2>
+     <div class="info-grid">
+
+      <div class="info-card">
+        <img src="imagenes/Infografia_baja.jpg">
+        <a href="imagenes/Infografia_baja.jpg" target="_blank">Ver documento</a>
+        <h3>Baja estudiantil</h3>
       </div>
-      <h3>Baja de materias</h3>
-    </div>
 
-    <div class="card card5">
-      <div class="overlay">
-        <a href="videos/horario_curso.mp4" target="_blank">
-          <button>Ver video</button>
-        </a>
+      <div class="info-card">
+        <img src="imagenes/Infografia_baja.jpg">
+        <a href="imagenes/Infografía_Apoyos_disponibles.jpg" target="_blank">Ver documento</a>
+        <h3>Apoyos disponibles</h3>
       </div>
-      <h3>Horario de cursos</h3>
+
     </div>
 
-    <div class="card card6">
-      <div class="overlay">
-        <a href="videos/actualizar_contraseña.mp4" target="_blank">
-          <button>Ver video</button>
-        </a>
-      </div>
-      <h3>Actualizar contraseña</h3>
-    </div>
-
-
-    <div class="separador">
-      <h2>Infografías</h2>
-    </div>
-
-
-   <!-- Infografias -->
-    <div class="card infografia">
-      <div class="imagen-container">
-        <a href="archivos_pdf/inscripcion.pdf" target="_blank">
-          <img src="imagenes/Infografia_baja.jpg" alt="Proceso de inscripción">
-        </a>
-        <div class="lupa" onclick="window.open('archivos_pdf/inscripcion.pdf', '_blank')">🔍</div>
-      </div>
-      <h3>Proceso de inscripción</h3>
-    </div>
-
-    <div class="card infografia">
-      <div class="imagen-container">
-        <a href="archivos_pdf/plan_estudios.pdf" target="_blank">
-          <img src="imagenes/Infografia_baja.jpg" alt="Plan de estudios">
-        </a>
-        <div class="lupa" onclick="window.open('archivos_pdf/plan_estudios.pdf', '_blank')">🔍</div>
-      </div>
-      <h3>Plan de estudios</h3>
-    </div>
-
-    <div class="card infografia">
-      <div class="imagen-container">
-        <a href="archivos_pdf/apoyos.pdf" target="_blank">
-          <img src="imagenes/Infografia_baja.jpg" alt="Apoyos disponibles">
-        </a>
-        <div class="lupa" onclick="window.open('archivos_pdf/apoyos.pdf', '_blank')">🔍</div>
-      </div>
-      <h3>Apoyos disponibles</h3>
-    </div>
-    
-    <div class="card infografia">
-      <div class="imagen-container">
-        <img src="imagenes/Infografia_baja.jpg" alt="Baja estudiantil" onclick="abrirModal(this)">
-        <div class="lupa" onclick="abrirModal(document.querySelector('.infografia img'))">🔍</div>
-      </div>
-      <h3>Baja estudiantil</h3>
-    </div>
-    
-    <div id="modal" class="modal" onclick="activarPantallaCompleta()">
-      <span class="cerrar" onclick="cerrarModal()">&times;</span>
-      <img class="modal-contenido" id="imagenExpandida">
-    </div>
-
-
-    
-  </div>
-</div>
-
-
-     <br>
-     
+  </section>
+ 
     <footer>
         <div class="footer-content">
          <div class="footer-container">
@@ -206,6 +270,69 @@
       pantallaCompletaActiva = true;
     }
   }
+
+
+    let index = 0;
+    const slides = document.querySelector('.slides');
+    const totalSlides = document.querySelectorAll('.slide').length;
+    const indicatorsContainer = document.querySelector('.indicators');
+
+    let interval;
+
+    /* función para mover */
+    function updateSlide() {
+      slides.style.transform = `translateX(-${index * 100}%)`;
+
+      const dots = document.querySelectorAll('.indicators span');
+      dots.forEach(dot => dot.classList.remove('active'));
+      dots[index].classList.add('active');
+    }
+
+    /* automático */
+    function startAutoSlide() {
+      interval = setInterval(() => {
+        index = (index + 1) % totalSlides;
+        updateSlide();
+      }, 8000); 
+    }
+
+    function resetAutoSlide() {
+      clearInterval(interval);
+      startAutoSlide();
+    }
+
+    /* botones */
+    document.querySelector('.next').addEventListener('click', () => {
+      index = (index + 1) % totalSlides;
+      updateSlide();
+      resetAutoSlide(); 
+    });
+
+    document.querySelector('.prev').addEventListener('click', () => {
+      index = (index - 1 + totalSlides) % totalSlides;
+      updateSlide();
+      resetAutoSlide(); 
+    });
+
+    /* iniciar */
+    startAutoSlide();
+
+    // indicadores
+    for (let i = 0; i < totalSlides; i++) {
+      const dot = document.createElement('span');
+      
+      dot.addEventListener('click', () => {
+        index = i;
+        updateSlide();
+        resetAutoSlide();
+      });
+
+      indicatorsContainer.appendChild(dot);
+    }
+
+
+
+
 </script>
 
 
