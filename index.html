@@ -3,123 +3,155 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portal de servicios para estudiantes de la Benemérita Universidad Autónoma de Puebla - FCC. Guías en video y documentos informativos para tus trámites académicos.">
+    <meta name="description" content="Portal de servicios para estudiantes de la FCC BUAP.">
     <link rel="stylesheet" href="css/estilos.css">
-    
-    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@1,600&display=swap" rel="stylesheet">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@300;400;600;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
-
-    <title>Servicios FCC - BUAP</title>
+    <title>ICC FCC - BUAP</title>
     <link rel="icon" type="image/png" href="imagenes/BUAP-favi-icon.png">
-
 </head>
 <body>
 
-    <header role="banner">
-        <div class="logo">
-            <img src="imagenes/logo_buap_h.png" alt="Logo" class="logo-image" href="https://buap.mx/">
+  <!-- ===== HEADER OSCURO ===== -->
+  <header>
+    <div class="header-top">
+      <div class="logos">
+        <!-- Logo BUAP: grande, blanco -->
+        <a href="https://buap.mx/" target="_blank">
+          <img src="imagenes/buap_blue.png" alt="BUAP" class="logo-buap">
+        </a>
+
+        <div class="logo-separator"></div>
+        
+        <a href="https://www.cs.buap.mx/" target="_blank">
+          <img src="imagenes/logo_FCC.png" alt="FCC" class="logo-fcc">
+        </a>
+      </div>
+
+      <!-- Derecha: links rápidos + íconos sociales -->
+      <div class="header-right">
+        <div class="header-links">
+          <a href="http://www.autoservicios.buap.mx/" target="_blank">Autoservicios</a>
+          <a href="http://www.correo.buap.mx/" target="_blank">Correo BUAP</a>
         </div>
-
-        <nav class="navbar">
-          <a class="nav-btn active"> 
-            Inicio
-          </a>
-
-          <a href="https://www.cs.buap.mx/~secreacademica/Servicios-Escolares.html" class="nav-btn">
-             Servicios Escolares
-          </a>
-
-          <a href="https://www.cs.buap.mx/~secreacademica/" class="nav-btn"> 
-             Secretaría Académica FCC
-          </a>
-
-        </nav>
-
+        <div class="header-divider"></div>
         <div class="redes-sociales">
-
-         <a href="https://www.facebook.com/ComputacionBUAP?locale=es_LA" target="_blank" class="icono"><i class="fab fa-facebook-f"></i></a>
-         <a href="https://www.youtube.com/@BUAPoficial" target="_blank" class="icono"><i class="fab fa-youtube"></i></a>
-         <!--<a href="mailto:vinculacion.fcc@correo.buap.mx" class="icono"><i class="fas fa-envelope"></i></a>-->
-
+          <a href="https://correo.buap.mx" target="_blank" class="icono" aria-label="Correo">
+            <i class="fas fa-envelope"></i>
+          </a>
+          <a href="https://www.facebook.com/ComputacionBUAP" target="_blank" class="icono" aria-label="Facebook">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="https://www.instagram.com/fccomputacion.buap/" target="_blank" class="icono" aria-label="Instagram">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="https://www.youtube.com/@BUAPoficial" target="_blank" class="icono" aria-label="YouTube">
+            <i class="fab fa-youtube"></i>
+          </a>
+          <a href="https://x.com/buap_fcc" target="_blank" class="icono" aria-label="X / Twitter">
+            <i class="fab fa-x-twitter"></i>
+          </a>
         </div>
-    </header>
+      </div>
+    </div>
 
-    <!-- barra -->
-    <section class="hero">
+    <!-- Línea cian, sello visual de la FCC -->
+    <div class="header-accent"></div>
+  </header>
+
+  <!-- ===== NAVBAR BLANCA SEPARADA===== -->
+  <div class="navbar-bar">
+    <nav class="navbar">
+      <a class="nav-btn active" href="#">Inicio</a>
+      <a href="https://www.cs.buap.mx/~secreacademica/Servicios-Escolares.html" class="nav-btn">Servicios Escolares</a>
+      <a href="https://www.cs.buap.mx/~secreacademica/" class="nav-btn">Secretaría Académica</a>
+      <a href="https://sersoc.cs.buap.mx/" class="nav-btn">Servicio Social</a>
+      <a href="https://becas.buap.mx/" class="nav-btn">Becas</a>
+    </nav>
+  </div>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero">
+    <div class="hero-inner">
+      <span class="hero-tag">Facultad de Ciencias de la Computación</span>
       <h1>Ingeniería en Ciencias de la Computación</h1>
-      <p>Consulta guías, videos e información académica</p>
-    </section>
+      <p>Consulta guías, videos e información académica para tus trámites</p>
+    </div>
+  </section>
 
-    <!-- carrusel-->
-
-    <section class="carousel">
+  <!-- ===== CARRUSEL PRINCIPAL ===== -->
+  <section class="carousel">
     <div class="slides">
-
       <div class="slide active">
-        <img src="imagenes/escuela_buap.jpg">
+        <img src="imagenes/escuela_buap.jpg" alt="Edificio FCC">
         <div class="caption">
           <h2>Inscripciones abiertas</h2>
           <p>Consulta fechas importantes en servicios escolares</p>
         </div>
       </div>
-
       <div class="slide">
-        <img src="imagenes/calendario.png">
+        <img src="imagenes/calendario.png" alt="Calendario">
         <div class="caption">
           <h2>Periodo de bajas</h2>
           <p>Realiza tu trámite antes de la fecha límite</p>
         </div>
       </div>
-
       <div class="slide">
-        <img src="imagenes/arco.jpg">
+        <img src="imagenes/arco.jpg" alt="BUAP">
         <div class="caption">
           <h2>Ubica a tu tutor</h2>
           <p>Consulta el sistema académico</p>
         </div>
       </div>
-
     </div>
-
     <div class="indicators"></div>
-
-    <!-- Botones -->
-    <button class="prev">&#10094;</button>
-    <button class="next">&#10095;</button>
+    <button class="prev" aria-label="Anterior">&#10094;</button>
+    <button class="next" aria-label="Siguiente">&#10095;</button>
   </section>
 
-  <! -- mini carrusel -->
-  <section class="mini-carousel">
+  <!-- ===== MINI CARRUSEL DE AVISOS (fondo azul #122E48) ===== -->
+  <div class="mini-carousel">
     <div class="mini-track">
-
-      <div class="mini-item">Aviso 1</div>
-      <div class="mini-item">Convocatoria becas</div>
-      <div class="mini-item">Calendario escolar</div>
-      <div class="mini-item">Servicio social</div>
-      <div class="mini-item">Prácticas profesionales</div>
-
+      <div class="mini-item"><i class="fas fa-bullhorn"></i> Aviso importante</div>
+      <div class="mini-item"><i class="fas fa-graduation-cap"></i> Convocatoria becas</div>
+      <div class="mini-item"><i class="fas fa-calendar-alt"></i> Calendario escolar 2026</div>
+      <div class="mini-item"><i class="fas fa-hands-helping"></i> Servicio social</div>
+      <div class="mini-item"><i class="fas fa-briefcase"></i> Prácticas profesionales</div>
+      <div class="mini-item"><i class="fas fa-file-alt"></i> Trámites en línea</div>
+      <!-- duplicados para el loop continuo -->
+      <div class="mini-item"><i class="fas fa-bullhorn"></i> Aviso importante</div>
+      <div class="mini-item"><i class="fas fa-graduation-cap"></i> Convocatoria becas</div>
+      <div class="mini-item"><i class="fas fa-calendar-alt"></i> Calendario escolar 2026</div>
+      <div class="mini-item"><i class="fas fa-hands-helping"></i> Servicio social</div>
+      <div class="mini-item"><i class="fas fa-briefcase"></i> Prácticas profesionales</div>
+      <div class="mini-item"><i class="fas fa-file-alt"></i> Trámites en línea</div>
     </div>
-  </section>
+  </div>
 
-  <!-- Videos-->
+  <!-- ===== CUERPO PRINCIPAL — fondo blanco ===== -->
+  <main class="main-content">
+
+    <!-- GUÍAS EN VIDEO -->
+    <div class="section-title">
+      <h2>Guías en video</h2>
+      <p>Tutoriales paso a paso para tus trámites académicos</p>
+    </div>
+
     <section class="contenedor">
-
       <div class="card" style="background-image:url('imagenes/inscripcion.jpg')">
         <div class="overlay">
           <a href="videos/Inscripción_de_materias.mp4" target="_blank">
-            <button>Ver video</button>
+            <button><i class="fas fa-play"></i> Ver video</button>
           </a>
         </div>
-        <h3>Inscripción de materias</h3>
+        <h3> Inscripción de materias</h3>
       </div>
 
       <div class="card" style="background-image:url('imagenes/buscar_tutor.jpg')">
         <div class="overlay">
           <a href="videos/Ubicar_tutor.mp4" target="_blank">
-            <button>Ver video</button>
+            <button><i class="fas fa-play"></i> Ver video</button>
           </a>
         </div>
         <h3>Ubicar tutor</h3>
@@ -128,7 +160,7 @@
       <div class="card" style="background-image:url('imagenes/escuela_buap.jpg')">
         <div class="overlay">
           <a href="videos/Plan_estudios.mp4" target="_blank">
-            <button>Ver video</button>
+            <button><i class="fas fa-play"></i> Ver video</button>
           </a>
         </div>
         <h3>Plan de estudios</h3>
@@ -137,7 +169,7 @@
       <div class="card" style="background-image:url('imagenes/inscripcion.jpg')">
         <div class="overlay">
           <a href="videos/baja_materias.mp4" target="_blank">
-            <button>Ver video</button>
+            <button><i class="fas fa-play"></i> Ver video</button>
           </a>
         </div>
         <h3>Baja de materias</h3>
@@ -146,7 +178,7 @@
       <div class="card" style="background-image:url('imagenes/inscripcion.jpg')">
         <div class="overlay">
           <a href="videos/horario_curso.mp4" target="_blank">
-            <button>Ver video</button>
+            <button><i class="fas fa-play"></i> Ver video</button>
           </a>
         </div>
         <h3>Horario de cursos</h3>
@@ -155,186 +187,147 @@
       <div class="card" style="background-image:url('imagenes/inscripcion.jpg')">
         <div class="overlay">
           <a href="videos/actualizar_contraseña.mp4" target="_blank">
-            <button>Ver video</button>
+            <button><i class="fas fa-play"></i> Ver video</button>
           </a>
         </div>
         <h3>Actualizar contraseña</h3>
       </div>
-
     </section>
 
-  
+    <div class="section-divider"></div>
 
-   <!-- Infografias y presentacion -->
-    <section class="info">
+    <!-- PRESENTACIONES -->
+    <div class="section-title">
+      <h2>Presentaciones</h2>
+      <p>Documentos de consulta para tu trayectoria académica</p>
+    </div>
 
-    <h2>Presentaciones</h2>
-      <div class="presentaciones">
-
+    <div class="presentaciones">
       <div class="present-card">
         <i class="fas fa-user-graduate"></i>
         <h3>Proceso de inscripción</h3>
-        <a href="archivos_pdf/inscripcion.pdf" target="_blank">Ver documento</a>
+        <p>Conoce el proceso completo paso a paso para inscribirte correctamente.</p>
+        <a href="archivos_pdf/inscripcion.pdf" target="_blank">
+          <i class="fas fa-file-pdf"></i> Ver documento
+        </a>
       </div>
-
       <div class="present-card">
         <i class="fas fa-book"></i>
         <h3>Plan de estudios</h3>
-        <a href="archivos_pdf/plan_estudios.pdf" target="_blank">Ver documento</a>
+        <p>Consulta las materias y créditos del plan vigente por semestre.</p>
+        <a href="archivos_pdf/plan_estudios.pdf" target="_blank">
+          <i class="fas fa-file-pdf"></i> Ver documento
+        </a>
       </div>
-
       <div class="present-card">
         <i class="fas fa-hand-holding-heart"></i>
         <h3>Apoyos disponibles</h3>
-        <a href="archivos_pdf/apoyos.pdf" target="_blank">Ver documento</a>
+        <p>Becas, apoyos económicos y programas de ayuda para estudiantes.</p>
+        <a href="archivos_pdf/apoyos.pdf" target="_blank">
+          <i class="fas fa-file-pdf"></i> Ver documento
+        </a>
       </div>
-
     </div>
-  
-     <h2>infografías</h2>
-     <div class="info-grid">
 
+    <div class="section-divider"></div>
+
+    <!-- INFOGRAFÍAS -->
+    <div class="section-title">
+      <h2>Infografías</h2>
+      <p>Información visual de procesos importantes</p>
+    </div>
+
+    <div class="info-grid">
       <div class="info-card">
-        <img src="imagenes/Infografia_baja.jpg">
-        <a href="imagenes/Infografia_baja.jpg" target="_blank">Ver documento</a>
+        <div class="info-card-img">
+          <img src="imagenes/Infografia_baja.jpg" alt="Baja estudiantil">
+          <div class="info-card-img-overlay">
+            <a href="imagenes/Infografia_baja.jpg" target="_blank" class="btn-ver">
+              <i class="fas fa-expand"></i> Ver completa
+            </a>
+          </div>
+        </div>
         <h3>Baja estudiantil</h3>
       </div>
-
       <div class="info-card">
-        <img src="imagenes/Infografia_baja.jpg">
-        <a href="imagenes/Infografía_Apoyos_disponibles.jpg" target="_blank">Ver documento</a>
+        <div class="info-card-img">
+          <img src="imagenes/Infografía_Apoyos_disponibles.jpg" alt="Apoyos disponibles">
+          <div class="info-card-img-overlay">
+            <a href="imagenes/Infografía_Apoyos_disponibles.jpg" target="_blank" class="btn-ver">
+              <i class="fas fa-expand"></i> Ver completa
+            </a>
+          </div>
+        </div>
         <h3>Apoyos disponibles</h3>
       </div>
-
     </div>
 
-  </section>
- 
-    <footer>
-        <div class="footer-content">
-         <div class="footer-container">
-            <div class="footer-column">
-             <img src="imagenes/buap_blue.png" alt="Letras" class="footer-logo">
-             </div>
-            <div class="footer-column">
-            <p class="resaltar">
-                Benemérita Universidad Autónoma de Puebla <br>
-            </p>
-             <p>
-              4 Sur 104 Centro Histórico C.P. 72000 <br>
-              Teléfono +52 (222) 229 55 00
-             </p>
-            </div>
-           
-            
-         </div>
-        
-    </footer>
-</body>
+  </main>
 
-<script>
-  let modalAbierto = false;
-  let pantallaCompletaActiva = false;
+  <!-- ===== FOOTER — azul #122E48 ===== -->
+  <footer>
+    <div class="footer-top-bar"></div>
+    <div class="footer-inner">
+      <div>
+        <img src="imagenes/buap_blue.png" alt="BUAP" class="footer-logo">
+      </div>
+      <div>
+        <p class="footer-label">Benemérita Universidad Autónoma de Puebla</p>
+        <p class="footer-line"><i class="fas fa-map-marker-alt"></i> 4 Sur 104, Centro Histórico, C.P. 72000</p>
+        <p class="footer-line"><i class="fas fa-phone"></i> +52 (222) 229 55 00</p>
+      </div>
+      <div>
+        <p class="footer-label">Facultad de Ciencias de la Computación</p>
+        <p class="footer-line">Ing. en Ciencias de la Computación</p>
+        <div class="footer-redes">
+          <a href="https://www.facebook.com/ComputacionBUAP" target="_blank" aria-label="Facebook">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="https://www.instagram.com/fccomputacion.buap/" target="_blank" aria-label="Instagram">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="https://www.youtube.com/@BUAPoficial" target="_blank" aria-label="YouTube">
+            <i class="fab fa-youtube"></i>
+          </a>
+          <a href="https://x.com/buap_fcc" target="_blank" aria-label="X / Twitter">
+            <i class="fab fa-x-twitter"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Benemérita Universidad Autónoma de Puebla · Facultad de Ciencias de la Computación</p>
+    </div>
+  </footer>
 
-  function abrirModal(img) {
-    const modal = document.getElementById("modal");
-    const imagenExpandida = document.getElementById("imagenExpandida");
-    modal.style.display = "block";
-    imagenExpandida.src = img.src;
-    modalAbierto = true;
-    pantallaCompletaActiva = false;
-  }
-
-  function cerrarModal() {
-    const modal = document.getElementById("modal");
-    modal.style.display = "none";
-    modalAbierto = false;
-
-    // Solo salir de pantalla completa si está activo
-    if (pantallaCompletaActiva && document.fullscreenElement) {
-      document.exitFullscreen();
-      pantallaCompletaActiva = false;
-    }
-  }
-
-  function activarPantallaCompleta() {
-    if (modalAbierto && !pantallaCompletaActiva) {
-      const imagen = document.getElementById("imagenExpandida");
-      if (imagen.requestFullscreen) {
-        imagen.requestFullscreen();
-      } else if (imagen.webkitRequestFullscreen) {
-        imagen.webkitRequestFullscreen();
-      } else if (imagen.msRequestFullscreen) {
-        imagen.msRequestFullscreen();
-      }
-      pantallaCompletaActiva = true;
-    }
-  }
-
-
+  <script>
+    // ===== CARRUSEL PRINCIPAL =====
     let index = 0;
     const slides = document.querySelector('.slides');
-    const totalSlides = document.querySelectorAll('.slide').length;
-    const indicatorsContainer = document.querySelector('.indicators');
+    const total  = document.querySelectorAll('.slide').length;
+    const dots   = document.querySelector('.indicators');
+    let timer;
 
-    let interval;
-
-    /* función para mover */
-    function updateSlide() {
+    function go(i) {
+      index = (i + total) % total;
       slides.style.transform = `translateX(-${index * 100}%)`;
-
-      const dots = document.querySelectorAll('.indicators span');
-      dots.forEach(dot => dot.classList.remove('active'));
-      dots[index].classList.add('active');
-    }
-
-    /* automático */
-    function startAutoSlide() {
-      interval = setInterval(() => {
-        index = (index + 1) % totalSlides;
-        updateSlide();
-      }, 8000); 
-    }
-
-    function resetAutoSlide() {
-      clearInterval(interval);
-      startAutoSlide();
-    }
-
-    /* botones */
-    document.querySelector('.next').addEventListener('click', () => {
-      index = (index + 1) % totalSlides;
-      updateSlide();
-      resetAutoSlide(); 
-    });
-
-    document.querySelector('.prev').addEventListener('click', () => {
-      index = (index - 1 + totalSlides) % totalSlides;
-      updateSlide();
-      resetAutoSlide(); 
-    });
-
-    /* iniciar */
-    startAutoSlide();
-
-    // indicadores
-    for (let i = 0; i < totalSlides; i++) {
-      const dot = document.createElement('span');
-      
-      dot.addEventListener('click', () => {
-        index = i;
-        updateSlide();
-        resetAutoSlide();
+      document.querySelectorAll('.indicators span').forEach((d, j) => {
+        d.classList.toggle('active', j === index);
       });
-
-      indicatorsContainer.appendChild(dot);
     }
+    function start() { timer = setInterval(() => go(index + 1), 8000); }
+    function reset() { clearInterval(timer); start(); }
 
+    document.querySelector('.next').addEventListener('click', () => { go(index + 1); reset(); });
+    document.querySelector('.prev').addEventListener('click', () => { go(index - 1); reset(); });
 
-
-
-</script>
-
-
-
+    for (let i = 0; i < total; i++) {
+      const d = document.createElement('span');
+      if (i === 0) d.classList.add('active');
+      d.addEventListener('click', () => { go(i); reset(); });
+      dots.appendChild(d);
+    }
+    start();
+  </script>
+</body>
 </html>
